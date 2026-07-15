@@ -249,9 +249,14 @@
           </div>
         </div>
       </div>
-      <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+      <div id="lux-video" class="relative rounded-3xl overflow-hidden shadow-2xl group cursor-pointer" role="button" tabindex="0" aria-label="Lire la vidéo de présentation du Luxembourg">
         <img alt="Panorama de Luxembourg ville au coucher du soleil" class="w-full h-[320px] md:h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtHxLUeBQ8Uf2SX4dLyQuG2bxtlAHApBtMqpKJ2InD0yz3L_ciF189rzuvH_Oa_d1du-aTRrxbxXo_a1V0AXlyeRmxdbl5kwn2oDjzCK5Amw6v-_8Kt1XvVq2mQPWIA0Jn94XOYEj4AeAWp0sKaOclqt7PnQC12pzZtlxXHaHgqBeMlP2HS6jZcJonbYlWNcpDZnMdGpwIIIsUiX3MPrFoSSQBwkTNC511DQadRhwN2X7d_3iPeEXjmfMvX" />
-        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -467,6 +472,20 @@
     });
   }, { rootMargin: '-40% 0px -50% 0px' });
   sections.forEach(section => section && sectionObserver.observe(section));
+
+  // Discover Luxembourg: click-to-play YouTube facade (avoids loading the
+  // YouTube iframe/tracking until the visitor actually wants to watch)
+  const luxVideo = document.getElementById('lux-video');
+  function playLuxVideo() {
+    luxVideo.innerHTML = '<iframe class="w-full h-[320px] md:h-[500px]" src="https://www.youtube-nocookie.com/embed/LUJvMDY5Z40?autoplay=1&rel=0" title="Découvrez le Luxembourg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
+  luxVideo.addEventListener('click', playLuxVideo);
+  luxVideo.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      playLuxVideo();
+    }
+  });
 
   // Contact form: no backend wired up yet, just confirm receipt locally
   document.getElementById('contact-form').addEventListener('submit', (e) => {
