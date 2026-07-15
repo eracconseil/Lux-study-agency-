@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lux Study Agency — Excellence académique au Luxembourg</title>
+<meta name="description" content="Lux Study Agency accompagne les étudiants internationaux vers l'admission, le visa et l'installation à l'Université du Luxembourg." />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet" />
+<link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-sans">
+
+<!-- Top Nav -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-gutter py-4 max-w-container-max-width mx-auto">
+    <div class="flex items-center gap-8">
+      <a href="#top" class="font-serif text-xl md:text-2xl text-primary tracking-tight font-bold">Lux Study Agency</a>
+      <div class="hidden md:flex gap-6 items-center">
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#services">Nos Services</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#tarifs">Tarification</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#luxembourg">Luxembourg</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#faq">FAQ</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="#contact" class="hidden sm:inline-block bg-primary text-on-primary px-6 py-2 rounded font-medium hover:bg-primary-container transition-all">Prendre rendez-vous</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-on-surface-variant" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col px-gutter pb-4 gap-3 bg-surface border-t border-outline/10">
+    <a class="py-2 text-on-surface-variant hover:text-primary" href="#services">Nos Services</a>
+    <a class="py-2 text-on-surface-variant hover:text-primary" href="#tarifs">Tarification</a>
+    <a class="py-2 text-on-surface-variant hover:text-primary" href="#luxembourg">Luxembourg</a>
+    <a class="py-2 text-on-surface-variant hover:text-primary" href="#faq">FAQ</a>
+    <a class="py-2 text-on-surface-variant hover:text-primary" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="top" class="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="w-full h-full bg-cover bg-center scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLsjQ1jJRUjLdFHxSgHF6WdejCNBhhNH2acmePU3rartM28q8dqj9Ak0Y7LSmWSemvIQdo_G5ueppNXhyIOEgy06NQcr7StW85MNTTak3LlySeYrj6_2ajpBSQEP4-1X8jLfmx7DTuWDN4WAIQ7KZ8g1j84Dnh2NBGPiT5V17A9SbUnfQ2FwZIZCUkGsiVWnMVa8BIlPb2MdeERsiPZCA_FGgwG0XOBHJhzxWDFUZMTOMt2G_ZuwxLDYP6Cw')"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-container-max-width mx-auto px-gutter py-12 md:py-section-gap-desktop text-white">
+    <div class="max-w-3xl">
+      <span class="text-tertiary-fixed-dim font-medium uppercase tracking-widest text-xs md:text-sm mb-4 block">Établissement de prestige</span>
+      <h1 class="font-serif text-display-lg md:text-display-lg-desktop mb-6 leading-tight">Accédez à l'excellence académique au Luxembourg avec un accompagnement expert</h1>
+      <p class="text-body-lg mb-10 text-white/90">Lux Study Agency propose des services premium d'accompagnement payant pour sécuriser votre admission et votre installation. Nous transformons les barrières administratives en un parcours fluide vers le succès au cœur de l'Europe.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#tarifs" class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center gap-2">
+          Consulter nos tarifs (FCFA)
+          <span class="material-symbols-outlined">payments</span>
+        </a>
+        <a href="#services" class="bg-white/10 backdrop-blur-md text-white border border-white/40 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">Découvrir les filières</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Community -->
+<section class="py-16 md:py-section-gap-desktop bg-surface">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-4">Investissez dans votre réussite académique et professionnelle</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Plus qu'une simple assistance, nous offrons une garantie de sérénité. Nos services payants vous assurent une conformité totale, un accès prioritaire au logement et une intégration réussie dans le système luxembourgeois.</p>
+    </div>
+    <div class="relative group rounded-2xl overflow-hidden shadow-xl">
+      <img alt="Étudiants internationaux collaborant sur un campus moderne" class="w-full h-[320px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvRXbxaQwpofomspV7QnQLeJaY1YsH77KgMO9V-TNspMJeV3BezqtxQYrzFMH1m9KHhddr1h8xw-LdY0iYYQeV_qQAPXQk0S7YNXSKOrImdB83hR6UkpXElE841g5g_Q1Voph3DOng6rXU3HbPLGsKVXmCas6jJBQziRQa4hszis3VSms0oMPFO4Y6Feg27EPdJDOS-SrykKL5P5UYYF6b8QCD5zOoHgQpJN4O_ICCDQwe7v9YbABblpe8" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12">
+        <h3 class="text-white font-serif text-headline-md md:text-2xl mb-2">Un pont vers l'excellence, sans compromis</h3>
+        <p class="text-white/90 max-w-lg">Notre expertise locale et nos relations privilégiées avec les institutions font de votre expatriation un succès garanti. Nous prenons en charge la complexité pour que vous ne gardiez que le meilleur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services 360 -->
+<section id="services" class="py-16 md:py-section-gap-desktop bg-surface-container-low scroll-mt-20">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="text-center md:text-left max-w-2xl mx-auto md:mx-0 mb-12 md:mb-16">
+      <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-4">Un accompagnement 360° à haute valeur ajoutée</h2>
+      <p class="text-on-surface-variant text-body-lg">Chaque service est conçu pour maximiser votre retour sur investissement et sécuriser votre avenir au Luxembourg.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">verified_user</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Conformité Garantie</h3>
+        <p class="text-on-surface-variant leading-relaxed">Zéro risque d'erreur administrative. Nous certifions chaque document de votre dossier pour une acceptation sans réserve par les autorités et l'université.</p>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">priority_high</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Accès Prioritaire Logement</h3>
+        <p class="text-on-surface-variant leading-relaxed">Évitez la pénurie de logements. Grâce à nos partenariats, bénéficiez d'un accès préférentiel à un parc immobilier réservé aux étudiants internationaux.</p>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">rocket_launch</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Fast-Track Visa</h3>
+        <p class="text-on-surface-variant leading-relaxed">Une assistance dédiée pour l'obtention de votre titre de séjour. Nous préparons votre dossier pour un traitement prioritaire auprès du Ministère des Affaires Étrangères.</p>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">stars</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Coaching d'Excellence</h3>
+        <p class="text-on-surface-variant leading-relaxed">Préparation intensive aux entretiens de sélection et aide à la rédaction de lettres de motivation percutantes, adaptées aux critères sélectifs luxembourgeois.</p>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">business_center</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Orientation Carrière</h3>
+        <p class="text-on-surface-variant leading-relaxed">Conseils stratégiques sur les filières offrant les salaires les plus compétitifs et les meilleures perspectives d'emploi durable au Grand-Duché.</p>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+          <span class="material-symbols-outlined text-primary">support_agent</span>
+        </div>
+        <h3 class="font-serif text-xl mb-4 text-primary">Conciergerie Arrivée</h3>
+        <p class="text-on-surface-variant leading-relaxed">Accueil physique, ouverture de compte bancaire, assurance santé et forfait mobile : nous gérons toute votre logistique post-arrivée pour un démarrage serein.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="tarifs" class="py-16 md:py-section-gap-desktop bg-surface scroll-mt-20">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-4">Nos Forfaits d'Accompagnement</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Des solutions transparentes et adaptées à vos besoins pour garantir votre succès académique au Luxembourg.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Essentiel -->
+      <div class="bg-white rounded-2xl border border-outline-variant p-8 flex flex-col hover:border-primary transition-all shadow-sm">
+        <div class="mb-8">
+          <h3 class="font-serif text-2xl text-primary mb-2">Pack Essentiel</h3>
+          <p class="text-on-surface-variant text-sm">Focus Admission &amp; Visa</p>
+          <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold text-primary">625 000</span><span class="text-on-surface-variant">FCFA HT</span></div>
+        </div>
+        <ul class="space-y-4 mb-10 flex-grow">
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Audit complet du dossier académique</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Gestion administrative des admissions</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Assistance complète au Visa d'études</span></li>
+          <li class="flex gap-3 text-sm opacity-40"><span class="material-symbols-outlined text-lg">block</span><span>Recherche de logement prioritaire</span></li>
+          <li class="flex gap-3 text-sm opacity-40"><span class="material-symbols-outlined text-lg">block</span><span>Conciergerie d'arrivée</span></li>
+        </ul>
+        <a href="#contact" class="w-full text-center border border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all">Choisir ce pack</a>
+      </div>
+      <!-- Premium -->
+      <div class="bg-primary rounded-2xl border-4 border-primary-fixed-dim p-8 flex flex-col md:-translate-y-4 shadow-2xl relative">
+        <div class="absolute top-0 right-8 -translate-y-1/2 bg-primary-fixed-dim text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recommandé</div>
+        <div class="mb-8 text-white">
+          <h3 class="font-serif text-2xl mb-2">Pack Premium</h3>
+          <p class="text-white/70 text-sm">Accompagnement 360° &amp; Installation</p>
+          <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold">1 215 000</span><span class="text-white/70">FCFA HT</span></div>
+        </div>
+        <ul class="space-y-4 mb-10 flex-grow text-white/90">
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">check_circle</span><span class="font-semibold text-white">Tout ce qui est inclus dans l'Essentiel</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">check_circle</span><span>Recherche de logement prioritaire garantie</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">check_circle</span><span>Aide à la reconnaissance des diplômes</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">check_circle</span><span>Conciergerie d'arrivée (Banque, Assurance)</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">check_circle</span><span>Session d'orientation stratégique</span></li>
+        </ul>
+        <a href="#contact" class="w-full text-center bg-white text-primary py-4 rounded-lg font-bold hover:bg-primary-fixed-dim transition-all shadow-lg">Prendre rendez-vous</a>
+      </div>
+      <!-- Elite -->
+      <div class="bg-white rounded-2xl border border-outline-variant p-8 flex flex-col hover:border-primary transition-all shadow-sm">
+        <div class="mb-8">
+          <h3 class="font-serif text-2xl text-primary mb-2">Pack Élite</h3>
+          <p class="text-on-surface-variant text-sm">Suivi Personnalisé 1ère Année</p>
+          <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold text-primary">1 900 000</span><span class="text-on-surface-variant">FCFA HT</span></div>
+        </div>
+        <ul class="space-y-4 mb-10 flex-grow">
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span class="font-semibold">Tout ce qui est inclus dans le Premium</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Coaching carrière mensuel (1ère année)</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Mise en relation réseau professionnel</span></li>
+          <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Support administratif d'urgence 24/7</span></li>
+        </ul>
+        <a href="#contact" class="w-full text-center border border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all">Consulter un expert</a>
+      </div>
+    </div>
+    <p class="mt-12 text-center text-on-surface-variant text-sm italic">Des frais administratifs institutionnels (Université, Ambassade) peuvent s'ajouter selon votre situation spécifique.</p>
+  </div>
+</section>
+
+<!-- Filieres -->
+<section class="py-16 md:py-section-gap-desktop bg-surface-container-low">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-4">Explorez les filières de l'Université du Luxembourg</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">L'Université du Luxembourg est reconnue mondialement pour son approche multilingue et ses liens étroits avec le secteur professionnel.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-8 bg-white rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all">
+        <div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">payments</span></div>
+        <h4 class="font-bold text-primary mb-3 text-lg">Économie &amp; Finance</h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Profitez de la proximité immédiate de la Place Financière. Des programmes co-conçus avec les leaders de la Fintech.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all">
+        <div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">gavel</span></div>
+        <h4 class="font-bold text-primary mb-3 text-lg">Droit</h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Étudiez au cœur des institutions judiciaires de l'UE. Une expertise unique en droit européen.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all">
+        <div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">precision_manufacturing</span></div>
+        <h4 class="font-bold text-primary mb-3 text-lg">Ingénierie</h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Innovation technologique et recherche spatiale. Accès à des laboratoires de pointe.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all">
+        <div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">psychology</span></div>
+        <h4 class="font-bold text-primary mb-3 text-lg">Sciences Humaines</h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Une approche pluridisciplinaire. Formations d'excellence en psychologie et éducation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Discover Luxembourg -->
+<section id="luxembourg" class="py-16 md:py-section-gap-desktop bg-surface-container-lowest scroll-mt-20">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div>
+        <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-6">Découvrez le Luxembourg : Un carrefour d'opportunités</h2>
+        <div class="space-y-6 text-on-surface-variant">
+          <p>Le Grand-Duché de Luxembourg offre l'un des environnements les plus sûrs et les plus dynamiques au monde. Avec son économie florissante et son statut de hub technologique européen, c'est le terrain idéal pour les jeunes talents.</p>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">security</span>
+            <p><strong class="text-primary">Sécurité Exceptionnelle :</strong> Classé parmi les pays les plus sûrs de la planète, offrant une tranquillité d'esprit totale.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">public</span>
+            <p><strong class="text-primary">Multiculturalisme :</strong> Avec plus de 170 nationalités, vivez une expérience internationale immersive au quotidien.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">trending_up</span>
+            <p><strong class="text-primary">Dynamisme Économique :</strong> Des salaires parmi les plus élevés d'Europe et un taux de chômage des jeunes très bas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+        <img alt="Panorama de Luxembourg ville au coucher du soleil" class="w-full h-[320px] md:h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtHxLUeBQ8Uf2SX4dLyQuG2bxtlAHApBtMqpKJ2InD0yz3L_ciF189rzuvH_Oa_d1du-aTRrxbxXo_a1V0AXlyeRmxdbl5kwn2oDjzCK5Amw6v-_8Kt1XvVq2mQPWIA0Jn94XOYEj4AeAWp0sKaOclqt7PnQC12pzZtlxXHaHgqBeMlP2HS6jZcJonbYlWNcpDZnMdGpwIIIsUiX3MPrFoSSQBwkTNC511DQadRhwN2X7d_3iPeEXjmfMvX" />
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial quote -->
+<section class="relative py-20 md:py-28 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2u7l6Sv-jGYvENiHy4MbYnnpEXIkJjQ9rkPwrF32QDwxac5EQLQer41UfnDsbUWfg1SmNOTt8qLCQ-hZDLfaMYr8ez1Ug2d7TFJsHlh1w8gSdsGynqt9UC4OrDVTJA2DZzG_NGKH1v1h8T8e_ly2qYTHkcaOkkI-nALXnig5LSTWbL2JX0brwf9d9ILO4kMTGHPpkEQUux6geXvr2l1g3o50STuaKCluAoqJxgLbcf-LUCnmDJTAqkQ')"></div>
+    <div class="absolute inset-0 bg-primary/80"></div>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-gutter text-center">
+    <p class="font-serif text-2xl md:text-4xl text-white leading-snug max-w-3xl mx-auto">"Votre futur commence là où s'arrête votre zone de confort."</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 md:py-section-gap-desktop bg-surface-container-low scroll-mt-20">
+  <div class="max-w-container-max-width mx-auto px-gutter">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-4">Questions Fréquentes</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Tout ce que vous devez savoir pour préparer votre projet d'études en toute sérénité.</p>
+    </div>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <div class="bg-white rounded-xl border border-outline/10 overflow-hidden shadow-sm hover:border-primary/30 transition-colors">
+        <details class="group">
+          <summary class="flex justify-between items-center gap-4 p-6 cursor-pointer list-none">
+            <span class="font-bold text-primary">Quels sont les modes de paiement ?</span>
+            <span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant"><p>Nous acceptons les virements bancaires, les cartes bancaires (Visa, Mastercard), ainsi que les solutions de paiement mobile telles que <strong>Mobile Money</strong> (Orange, MTN, Moov) et <strong>Wave</strong>. Le paiement échelonné est disponible pour les forfaits Premium et Élite.</p></div>
+        </details>
+      </div>
+      <div class="bg-white rounded-xl border border-outline/10 overflow-hidden shadow-sm hover:border-primary/30 transition-colors">
+        <details class="group">
+          <summary class="flex justify-between items-center gap-4 p-6 cursor-pointer list-none">
+            <span class="font-bold text-primary">Quand dois-je commencer ?</span>
+            <span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant"><p>Il est idéal de commencer vos démarches <strong>6 à 12 mois</strong> avant la rentrée académique. Ce délai permet de gérer sereinement chaque étape cruciale — de l'admission universitaire à l'obtention du visa et la sécurisation de votre logement — pour garantir un départ sans stress vers votre nouvelle vie au Luxembourg.</p></div>
+        </details>
+      </div>
+      <div class="bg-white rounded-xl border border-outline/10 overflow-hidden shadow-sm hover:border-primary/30 transition-colors">
+        <details class="group">
+          <summary class="flex justify-between items-center gap-4 p-6 cursor-pointer list-none">
+            <span class="font-bold text-primary">Garantissez-vous l'admission ?</span>
+            <span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant"><p>Nous maximisons vos chances via une préparation de dossier d'excellence, mais aucune agence ne peut garantir une décision d'admission qui appartient à l'université. Le forfait Premium inclut une garantie de satisfaction sur la recherche de logement.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA / Contact -->
+<section id="contact" class="relative py-16 md:py-section-gap-desktop overflow-hidden scroll-mt-20">
+  <div class="absolute inset-0 z-0">
+    <img alt="Opportunités de carrière professionnelles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuwg1L9v-5obDvWU5JNhLbZqkLNOBSNINz6YHvYGC3uabiiebozcneKQ5-ro9P-um6Nnwr9p5AH5YF6E8Hss0XZtTBtGc6vw4hD-fLqC5qBj2DxUK5f_4Qwm8g5QcY-iK-FkWgHSmBB1TQg6XBm9XSIjJIexiLnTcnEInxR2Y_LzhQqKMJbG232MhqBl-Tj8VIv6Uo4rRjc-UM-I8m-gihLOGW2XKieF2xNXnorqpQkQwRCCQfhD8TX3aC_" />
+    <div class="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-gutter">
+    <div class="glass-card p-8 md:p-16 rounded-3xl shadow-2xl max-w-4xl mx-auto">
+      <div class="text-center md:text-left mb-10">
+        <h2 class="font-serif text-headline-lg md:text-headline-lg-desktop text-primary mb-6">Prêt à investir dans l'avenir de votre enfant ?</h2>
+        <p class="text-on-surface-variant text-body-lg">Ne laissez pas la complexité administrative freiner vos ambitions. Réservez votre séance de conseil gratuite et découvrez comment notre accompagnement payant sécurise son parcours académique.</p>
+      </div>
+      <form id="contact-form" class="flex flex-col md:flex-row gap-4 mb-6">
+        <input class="flex-grow bg-surface border border-outline/20 rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary outline-none text-on-surface" placeholder="Votre adresse email professionnelle" type="email" name="email" required />
+        <button class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-primary-container transition-all whitespace-nowrap shadow-lg" type="submit">Prendre rendez-vous</button>
+      </form>
+      <a href="https://wa.me/225711217584?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20vos%20forfaits%20d%27accompagnement." target="_blank" rel="noopener" class="flex items-center justify-center gap-3 border-[1.5px] border-primary text-primary px-10 py-4 rounded-lg font-bold hover:bg-primary hover:text-white transition-all mb-12">
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.463 3.485 1.343 5.002L2 22l5.144-1.341a9.96 9.96 0 0 0 4.86 1.238h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.671-1.04-5.182-2.929-7.071a9.933 9.933 0 0 0-7.068-2.926zm5.86 15.858a8.29 8.29 0 0 1-5.86 2.428h-.003a8.29 8.29 0 0 1-4.229-1.157l-.303-.18-3.053.796.815-2.977-.198-.305a8.267 8.267 0 0 1-1.267-4.466c0-4.577 3.726-8.302 8.306-8.302a8.26 8.26 0 0 1 5.872 2.432 8.258 8.258 0 0 1 2.43 5.873c0 4.58-3.725 8.305-8.302 8.305z" /></svg>
+        Discuter sur WhatsApp
+      </a>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-primary/10">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary"><span class="material-symbols-outlined">call</span></div>
+          <div>
+            <p class="text-label-md text-primary/60 uppercase tracking-widest text-xs">Téléphone</p>
+            <p class="font-bold text-on-surface">+225 07 11 21 75 84</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary"><span class="material-symbols-outlined">mail</span></div>
+          <div>
+            <p class="text-label-md text-primary/60 uppercase tracking-widest text-xs">Email</p>
+            <a href="mailto:info@scgtech-ai.lu" class="font-bold text-on-surface hover:text-primary transition-colors">info@scgtech-ai.lu</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.463 3.485 1.343 5.002L2 22l5.144-1.341a9.96 9.96 0 0 0 4.86 1.238h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.671-1.04-5.182-2.929-7.071a9.933 9.933 0 0 0-7.068-2.926zm5.86 15.858a8.29 8.29 0 0 1-5.86 2.428h-.003a8.29 8.29 0 0 1-4.229-1.157l-.303-.18-3.053.796.815-2.977-.198-.305a8.267 8.267 0 0 1-1.267-4.466c0-4.577 3.726-8.302 8.306-8.302a8.26 8.26 0 0 1 5.872 2.432 8.258 8.258 0 0 1 2.43 5.873c0 4.58-3.725 8.305-8.302 8.305z" /></svg>
+          </div>
+          <div>
+            <p class="text-label-md text-primary/60 uppercase tracking-widest text-xs">WhatsApp</p>
+            <a href="https://wa.me/225711217584" target="_blank" rel="noopener" class="font-bold text-on-surface hover:text-primary transition-colors">+225 07 11 21 75 84</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary"><span class="material-symbols-outlined">location_on</span></div>
+          <div>
+            <p class="text-label-md text-primary/60 uppercase tracking-widest text-xs">Siège Social</p>
+            <p class="font-bold text-on-surface">15, Boulevard Royal, L-2449 Luxembourg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-surface-container-highest">
+  <div class="w-full py-16 md:py-section-gap-desktop px-gutter flex flex-col md:flex-row justify-between items-start gap-12 max-w-container-max-width mx-auto">
+    <div class="max-w-sm">
+      <span class="font-serif text-xl text-primary font-bold">Lux Study Agency</span>
+      <p class="mt-4 text-on-surface-variant">L'agence leader pour le recrutement international et l'accompagnement premium vers l'Université du Luxembourg.</p>
+      <div class="mt-6 flex gap-4">
+        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-white transition-all" href="#" aria-label="Réseaux sociaux"><span class="material-symbols-outlined">share</span></a>
+        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-white transition-all" href="#" aria-label="Site web"><span class="material-symbols-outlined">public</span></a>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+      <div>
+        <h4 class="text-label-md text-primary mb-6 uppercase tracking-wider">À propos</h4>
+        <ul class="space-y-3">
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Notre mission</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Nos experts</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Partenariats</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Blog &amp; Actu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-label-md text-primary mb-6 uppercase tracking-wider">Services</h4>
+        <ul class="space-y-3">
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#tarifs">Nos Tarifs</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#services">Conseil Visa</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#services">Logement</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#services">Orientation</a></li>
+        </ul>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <h4 class="text-label-md text-primary mb-6 uppercase tracking-wider">Légal</h4>
+        <ul class="space-y-3 text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="#">Confidentialité</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Conditions Générales</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Accessibilité</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-container-max-width mx-auto px-gutter py-8 border-t border-outline/10 text-center md:text-left text-on-surface-variant text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>© 2026 Lux Study Agency. Tous droits réservés.</p>
+    <p>Membre officiel du réseau Campus Luxembourg.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/225711217584?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20vos%20forfaits%20d%27accompagnement." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" class="fixed right-5 bottom-24 md:bottom-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+  <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.463 3.485 1.343 5.002L2 22l5.144-1.341a9.96 9.96 0 0 0 4.86 1.238h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.671-1.04-5.182-2.929-7.071a9.933 9.933 0 0 0-7.068-2.926zm5.86 15.858a8.29 8.29 0 0 1-5.86 2.428h-.003a8.29 8.29 0 0 1-4.229-1.157l-.303-.18-3.053.796.815-2.977-.198-.305a8.267 8.267 0 0 1-1.267-4.466c0-4.577 3.726-8.302 8.306-8.302a8.26 8.26 0 0 1 5.872 2.432 8.258 8.258 0 0 1 2.43 5.873c0 4.58-3.725 8.305-8.302 8.305z" /></svg>
+</a>
+
+<!-- Mobile bottom tab bar -->
+<nav id="bottom-nav" class="fixed bottom-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 shadow-[0_-4px_12px_rgba(0,0,0,0.06)] flex justify-around items-center px-2 pb-4 pt-2">
+  <a href="#top" class="bottom-nav-item flex flex-col items-center justify-center text-on-surface-variant/70 px-3 py-1">
+    <span class="material-symbols-outlined">home</span>
+    <span class="text-[10px] mt-0.5 font-semibold">Accueil</span>
+  </a>
+  <a href="#services" class="bottom-nav-item flex flex-col items-center justify-center text-on-surface-variant/70 px-3 py-1">
+    <span class="material-symbols-outlined">description</span>
+    <span class="text-[10px] mt-0.5 font-semibold">Services</span>
+  </a>
+  <a href="#tarifs" class="bottom-nav-item flex flex-col items-center justify-center text-on-surface-variant/70 px-3 py-1">
+    <span class="material-symbols-outlined">payments</span>
+    <span class="text-[10px] mt-0.5 font-semibold">Forfaits</span>
+  </a>
+  <a href="#faq" class="bottom-nav-item flex flex-col items-center justify-center text-on-surface-variant/70 px-3 py-1">
+    <span class="material-symbols-outlined">help</span>
+    <span class="text-[10px] mt-0.5 font-semibold">FAQ</span>
+  </a>
+</nav>
+
+<script>
+  // Mobile dropdown menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex', !isHidden);
+    menuToggle.setAttribute('aria-expanded', String(!isHidden));
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Bottom nav active state on scroll
+  const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+  const sections = ['top', 'services', 'tarifs', 'faq'].map(id => document.getElementById(id));
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        bottomNavItems.forEach(item => {
+          const active = item.getAttribute('href') === '#' + id;
+          item.classList.toggle('text-primary', active);
+          item.classList.toggle('text-on-surface-variant/70', !active);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px' });
+  sections.forEach(section => section && sectionObserver.observe(section));
+
+  // Contact form: no backend wired up yet, just confirm receipt locally
+  document.getElementById('contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert("Merci ! Nous vous recontacterons très prochainement à l'adresse indiquée.");
+    e.target.reset();
+  });
+</script>
+</body>
+</html>

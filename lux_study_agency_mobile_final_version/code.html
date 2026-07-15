@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lux Study Agency - Excellence Académique</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#ffddb6",
+                    "surface-variant": "#e2e2e5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9fc",
+                    "secondary": "#565f6d",
+                    "on-surface-variant": "#444653",
+                    "surface-container-highest": "#e2e2e5",
+                    "surface-bright": "#f9f9fc",
+                    "primary-fixed-dim": "#b5c4ff",
+                    "background": "#f9f9fc",
+                    "tertiary-fixed-dim": "#ecbf88",
+                    "on-primary-container": "#8aa4ff",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#54370c",
+                    "secondary-fixed-dim": "#bec7d7",
+                    "on-primary-fixed": "#00164e",
+                    "on-primary-fixed-variant": "#153ea3",
+                    "surface-dim": "#dadadc",
+                    "primary-fixed": "#dce1ff",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#dae3f4",
+                    "outline": "#747684",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f0f3",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5f4115",
+                    "on-tertiary-container": "#caa06c",
+                    "primary-container": "#003399",
+                    "primary": "#002068",
+                    "outline-variant": "#c4c5d5",
+                    "on-background": "#1a1c1e",
+                    "surface-container-low": "#f3f3f6",
+                    "tertiary": "#3a2200",
+                    "surface-tint": "#3557bc",
+                    "on-tertiary-fixed": "#2a1800",
+                    "inverse-surface": "#2f3133",
+                    "inverse-primary": "#b5c4ff",
+                    "on-secondary-fixed": "#131c28",
+                    "on-surface": "#1a1c1e",
+                    "on-secondary-fixed-variant": "#3e4755",
+                    "on-secondary-container": "#5c6573",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#dae3f4",
+                    "surface-container": "#eeeef0",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e8e8ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max-width": "1280px",
+                    "base": "8px",
+                    "section-gap-desktop": "120px",
+                    "gutter": "24px",
+                    "section-gap-mobile": "64px"
+            },
+            "fontFamily": {
+                    "label-md": ["Hanken Grotesk"],
+                    "display-lg": ["\"Source Serif 4\""],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["\"Source Serif 4\""],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["\"Source Serif 4\""],
+                    "headline-lg-mobile": ["\"Source Serif 4\""]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 51, 153, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm flex items-center justify-between px-5 h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<h1 class="font-headline-md text-[20px] font-bold text-primary">Lux Study Agency</h1>
+</div>
+<button class="p-2 hover:bg-surface-container-high transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="menu">menu</span>
+</button>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="relative px-5 py-12 overflow-hidden bg-white">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+</div>
+<div class="relative z-10 max-w-lg">
+<span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Établissement de Prestige</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Accédez à l'excellence académique</h2>
+<p class="text-on-surface-variant mb-8 font-body-md leading-relaxed">
+                    Lux Study Agency vous accompagne dans chaque étape de votre parcours international vers les universités les plus prestigieuses.
+                </p>
+<div class="flex flex-col gap-4">
+<button class="bg-primary text-white font-label-md py-4 rounded shadow-md active:scale-95 transition-transform">
+                        Consulter nos tarifs
+                    </button>
+<button class="border-[1.5px] border-primary text-primary font-label-md py-4 rounded active:scale-95 transition-transform">
+                        Découvrir nos services
+                    </button>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Inspired) -->
+<section class="px-5 py-16 bg-surface-container-low">
+<div class="text-center mb-10">
+<h2 class="font-headline-md text-primary mb-2">Un accompagnement 360°</h2>
+<div class="h-1 w-12 bg-tertiary-fixed-dim mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Service Card 1 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Orientation</h3>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="description">description</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Dossiers</h3>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="assignment_turned_in">assignment_turned_in</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Admission</h3>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="home_work">home_work</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Logement</h3>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="credit_card">credit_card</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Visa</h3>
+</div>
+<!-- Service Card 6 -->
+<div class="bg-white p-5 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<h3 class="font-headline-md text-[16px] text-primary">Départ</h3>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="px-5 py-16">
+<div class="text-center mb-10">
+<h2 class="font-headline-md text-primary mb-2">Nos Forfaits</h2>
+<p class="text-on-surface-variant font-body-md">L'excellence accessible selon vos besoins</p>
+</div>
+<div class="flex flex-col gap-8">
+<!-- Essentiel -->
+<div class="bg-white rounded-2xl border border-outline-variant/20 shadow-md overflow-hidden relative">
+<div class="p-6">
+<h3 class="font-headline-md text-primary mb-1">Essentiel</h3>
+<p class="text-on-surface-variant text-sm mb-4">L'accompagnement fondamental</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-3xl font-bold text-primary">625 000</span>
+<span class="text-primary/70 font-semibold uppercase text-xs">FCFA</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Dossier d'admission (3 universités)
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Orientation personnalisée
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Guide de procédure visa
+                            </li>
+</ul>
+<button class="w-full py-3 bg-primary-container text-white font-label-md rounded active:opacity-90">Choisir Essentiel</button>
+</div>
+</div>
+<!-- Premium -->
+<div class="bg-primary rounded-2xl border border-primary/10 shadow-xl overflow-hidden relative transform scale-[1.02]">
+<div class="absolute top-0 right-0 bg-tertiary-fixed-dim px-3 py-1 text-[10px] font-bold uppercase rounded-bl-lg">Le plus populaire</div>
+<div class="p-6">
+<h3 class="font-headline-md text-white mb-1">Premium</h3>
+<p class="text-primary-fixed-dim text-sm mb-4">Sérénité et suivi intensif</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-3xl font-bold text-white">1 215 000</span>
+<span class="text-primary-fixed-dim font-semibold uppercase text-xs">FCFA</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-white">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" data-icon="check_circle">check_circle</span>
+                                6 Universités &amp; Logement garanti
+                            </li>
+<li class="flex items-center gap-2 text-sm text-white">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" data-icon="check_circle">check_circle</span>
+                                Coaching complet entretien
+                            </li>
+<li class="flex items-center gap-2 text-sm text-white">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" data-icon="check_circle">check_circle</span>
+                                Gestion administrative complète
+                            </li>
+</ul>
+<button class="w-full py-3 bg-white text-primary font-label-md rounded active:scale-95 transition-transform">Choisir Premium</button>
+</div>
+</div>
+<!-- Elite -->
+<div class="bg-white rounded-2xl border border-outline-variant/20 shadow-md overflow-hidden relative">
+<div class="p-6">
+<h3 class="font-headline-md text-primary mb-1">Élite</h3>
+<p class="text-on-surface-variant text-sm mb-4">Conciergerie VIP &amp; Post-arrivée</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-3xl font-bold text-primary">1 900 000</span>
+<span class="text-primary/70 font-semibold uppercase text-xs">FCFA</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Accompagnement illimité
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Accueil aéroport &amp; Installation
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle">check_circle</span>
+                                Mentorat carrière 1 an
+                            </li>
+</ul>
+<button class="w-full py-3 border-[1.5px] border-primary text-primary font-label-md rounded active:bg-primary/5">Choisir Élite</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Callout -->
+<section class="px-5 my-12">
+<div class="h-64 w-full rounded-2xl relative overflow-hidden flex items-end p-6" data-alt="A cinematic, high-resolution shot of an ambitious young African student standing confidently in a sunlit university library in Europe. The architecture features classic oak bookshelves and modern glass partitions, blending intellectual heritage with global modernism. Warm, golden afternoon light filters through large windows, creating a prestigious and hopeful atmosphere. The color palette emphasizes deep blues and rich wooden tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2u7l6Sv-jGYvENiHy4MbYnnpEXIkJjQ9rkPwrF32QDwxac5EQLQer41UfnDsbUWfg1SmNOTt8qLCQ-hZDLfaMYr8ez1Ug2d7TFJsHlh1w8gSdsGynqt9UC4OrDVTJA2DZzG_NGKH1v1h8T8e_ly2qYTHkcaOkkI-nALXnig5LSTWbL2JX0brwf9d9ILO4kMTGHPpkEQUux6geXvr2l1g3o50STuaKCluAoqJxgLbcf-LUCnmDJTAqkQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<p class="relative z-10 text-white font-headline-md text-[20px] leading-snug">
+                    "Votre futur commence là où s'arrête votre zone de confort."
+                </p>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="px-5 py-16 bg-surface-container-high/30">
+<h2 class="font-headline-md text-primary text-center mb-8">FAQ</h2>
+<div class="space-y-4" id="faq-container">
+<div class="bg-white p-5 rounded-lg shadow-sm border border-outline-variant/10 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex justify-between items-center">
+<h4 class="font-label-md text-primary text-left">Quels sont les modes de paiement ?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-3 text-sm text-on-surface-variant leading-relaxed">Nous acceptons les virements bancaires, les paiements par carte bancaire, Mobile Money (Orange, MTN, Moov) et Wave. Le paiement échelonné est disponible pour les forfaits Premium et Élite.</p>
+</div>
+<div class="bg-white p-5 rounded-lg shadow-sm border border-outline-variant/10 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex justify-between items-center">
+<h4 class="font-label-md text-primary text-left">Quand dois-je commencer ?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-3 text-sm text-on-surface-variant leading-relaxed">L'idéal est de nous contacter 6 à 12 mois avant la rentrée souhaitée pour garantir les meilleurs délais d'admission et de visa.</p>
+</div>
+<div class="bg-white p-5 rounded-lg shadow-sm border border-outline-variant/10 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex justify-between items-center">
+<h4 class="font-label-md text-primary text-left">Garantissez-vous l'admission ?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-3 text-sm text-on-surface-variant leading-relaxed">Nous maximisons vos chances via une préparation de dossier d'excellence. Le forfait Premium inclut une garantie de satisfaction pour le logement.</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-5 py-16 text-center">
+<h2 class="font-headline-md text-primary mb-4">Contactez-nous</h2>
+<p class="text-on-surface-variant mb-8">Nos experts sont à votre disposition pour une première consultation gratuite.</p><p class="text-primary font-bold mb-4">+225 07 11 21 75 84</p>
+<a class="inline-flex items-center gap-3 px-6 py-4 bg-primary text-white rounded-full font-label-md shadow-lg active:scale-95 transition-transform" href="mailto:info@scgtech-ai.lu"><span class="material-symbols-outlined" data-icon="mail">mail</span>info@scgtech-ai.lu</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low px-6 py-12 flex flex-col items-center gap-4 text-center w-full mb-20">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<span class="font-label-md text-primary font-bold">LUX STUDY AGENCY</span>
+</div>
+<div class="flex flex-col gap-2 mb-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Mentions Légales</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@scgtech-ai.lu">Contact</a>
+</div>
+<p class="text-on-surface-variant opacity-70 text-xs">
+            © 2024 Lux Study Agency. All rights reserved.
+        </p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-t border-outline-variant/10 shadow-[0_-4px_12px_rgba(0,0,0,0.04)] flex justify-around items-center px-4 pb-4 pt-3 rounded-t-full">
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] mt-1 font-label-md">Accueil</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-white rounded-full px-4 py-1.5 shadow-sm">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="text-[10px] mt-0.5 font-label-md">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="text-[10px] mt-1 font-label-md">Forfaits</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="text-[10px] mt-1 font-label-md">FAQ</span>
+</div>
+</nav>
+<script>
+        // Micro-interaction: Active state simulation on scroll or click
+        document.querySelectorAll('nav div').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('nav div').forEach(i => {
+                    i.classList.remove('bg-primary-container', 'text-white', 'rounded-full', 'px-4', 'py-1.5', 'shadow-sm');
+                    i.classList.add('text-on-surface-variant', 'opacity-70');
+                });
+                this.classList.remove('text-on-surface-variant', 'opacity-70');
+                this.classList.add('bg-primary-container', 'text-white', 'rounded-full', 'px-4', 'py-1.5', 'shadow-sm');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>University of Luxembourg | Excellence in the Heart of Europe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#153ea3",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ecbf88",
+                        "secondary-fixed-dim": "#bec7d7",
+                        "on-tertiary-container": "#caa06c",
+                        "surface-container-highest": "#e2e2e5",
+                        "secondary-container": "#dae3f4",
+                        "surface-tint": "#3557bc",
+                        "on-error": "#ffffff",
+                        "tertiary": "#3a2200",
+                        "on-surface": "#1a1c1e",
+                        "tertiary-fixed": "#ffddb6",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#3e4755",
+                        "inverse-primary": "#b5c4ff",
+                        "on-tertiary-fixed-variant": "#5f4115",
+                        "surface": "#f9f9fc",
+                        "surface-variant": "#e2e2e5",
+                        "secondary-fixed": "#dae3f4",
+                        "surface-container-low": "#f3f3f6",
+                        "primary-container": "#003399",
+                        "on-primary-fixed": "#00164e",
+                        "on-primary-container": "#8aa4ff",
+                        "primary": "#002068",
+                        "on-secondary-fixed": "#131c28",
+                        "on-tertiary-fixed": "#2a1800",
+                        "surface-bright": "#f9f9fc",
+                        "inverse-surface": "#2f3133",
+                        "on-secondary-container": "#5c6573",
+                        "primary-fixed": "#dce1ff",
+                        "outline-variant": "#c4c5d5",
+                        "on-background": "#1a1c1e",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dadadc",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9fc",
+                        "on-surface-variant": "#444653",
+                        "secondary": "#565f6d",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "surface-container": "#eeeef0",
+                        "outline": "#747684",
+                        "inverse-on-surface": "#f0f0f3",
+                        "tertiary-container": "#54370c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap-desktop": "120px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container-max-width": "1280px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["\"Source Serif 4\""],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["\"Source Serif 4\""],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 32, 104, 0.4), rgba(0, 32, 104, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max-width mx-auto left-0 right-0 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-8">
+<span class="font-display-lg text-headline-md text-primary tracking-tight">University of Luxembourg</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 font-bold" href="#">Study</a>
+<a class="font-body-md text-body-md text-on-surface-variant pb-1 hover:text-primary transition-colors duration-200" href="#">Research</a>
+<a class="font-body-md text-body-md text-on-surface-variant pb-1 hover:text-primary transition-colors duration-200" href="#">University</a>
+<a class="font-body-md text-body-md text-on-surface-variant pb-1 hover:text-primary transition-colors duration-200" href="#">Life</a>
+<a class="font-body-md text-body-md text-on-surface-variant pb-1 hover:text-primary transition-colors duration-200" href="#">News</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-body-md font-medium hover:bg-primary-container transition-all">Apply Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105 transform" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLsjQ1jJRUjLdFHxSgHF6WdejCNBhhNH2acmePU3rartM28q8dqj9Ak0Y7LSmWSemvIQdo_G5ueppNXhyIOEgy06NQcr7StW85MNTTak3LlySeYrj6_2ajpBSQEP4-1X8jLfmx7DTuWDN4WAIQ7KZ8g1j84Dnh2NBGPiT5V17A9SbUnfQ2FwZIZCUkGsiVWnMVa8BIlPb2MdeERsiPZCA_FGgwG0XOBHJhzxWDFUZMTOMt2G_ZuwxLDYP6Cw')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max-width mx-auto px-gutter py-section-gap-desktop text-white">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Offrez à votre enfant un avenir brillant au cœur de l'Europe</h1>
+<p class="font-body-lg text-body-lg mb-10 text-primary-fixed opacity-90">L'Université du Luxembourg : Excellence académique, sécurité inégalée, opportunités mondiales.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center gap-2">
+                        Demander une consultation
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="glass-panel text-white border-white/40 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
+                        En savoir plus
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Community Section -->
+<section class="py-section-gap-desktop bg-surface">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Découvrez Notre Univers</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Rejoignez une communauté dynamique de penseurs et d'innovateurs venus du monde entier.</p>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-xl">
+<img class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A diverse group of cheerful university students from different ethnic backgrounds studying together in a modern, sun-drenched library. They are sitting around a wooden table with laptops and books, laughing and collaborating. The lighting is warm and natural, creating an atmosphere of inclusive academic excellence and multicultural harmony in a high-end European campus setting." src="https://lh3.googleusercontent.com/aida/AP1WRLvRXbxaQwpofomspV7QnQLeJaY1YsH77KgMO9V-TNspMJeV3BezqtxQYrzFMH1m9KHhddr1h8xw-LdY0iYYQeV_qQAPXQk0S7YNXSKOrImdB83hR6UkpXElE841g5g_Q1Voph3DOng6rXU3HbPLGsKVXmCas6jJBQziRQa4hszis3VSms0oMPFO4Y6Feg27EPdJDOS-SrykKL5P5UYYF6b8QCD5zOoHgQpJN4O_ICCDQwe7v9YbABblpe8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-12">
+<h3 class="text-white font-headline-md text-headline-md mb-2">Communauté Multiculturelle</h3>
+<p class="text-white/80 font-body-md max-w-lg">Plus de 120 nationalités se côtoient chaque jour pour bâtir l'avenir de l'Europe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="py-section-gap-desktop bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Pourquoi l'Université du Luxembourg ?</h2>
+<p class="text-on-surface-variant text-body-lg">Une institution de rang mondial offrant un cadre de vie et d'apprentissage exceptionnel.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Excellence Académique Reconnue</h3>
+<p class="text-on-surface-variant leading-relaxed">Classée parmi les 250 meilleures universités mondiales et 20ème parmi les jeunes universités.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Sécurité Inégalée</h3>
+<p class="text-on-surface-variant leading-relaxed">Le Luxembourg est régulièrement classé comme l'un des pays les plus sûrs au monde pour les étudiants.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Environnement Multiculturel</h3>
+<p class="text-on-surface-variant leading-relaxed">Un carrefour international unique avec des étudiants de plus de 120 pays différents.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Opportunités de Carrière</h3>
+<p class="text-on-surface-variant leading-relaxed">Accès direct à un centre financier mondial et des entreprises internationales de premier plan.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Frais Abordables</h3>
+<p class="text-on-surface-variant leading-relaxed">Une éducation de classe mondiale accessible pour environ 400€ par semestre.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-8 rounded-xl border border-outline/10 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">park</span>
+</div>
+<h3 class="font-headline-md text-xl mb-4 text-primary">Qualité de Vie Exceptionnelle</h3>
+<p class="text-on-surface-variant leading-relaxed">Transports gratuits, infrastructures modernes et une culture européenne riche.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="py-section-gap-desktop bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-gutter text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Vidéo de Présentation</h2>
+<p class="text-on-surface-variant mb-12 max-w-2xl mx-auto">Découvrez en vidéo la vie étudiante, les installations et l'atmosphère unique de l'Université du Luxembourg.</p>
+<div class="relative max-w-5xl mx-auto aspect-video rounded-3xl overflow-hidden shadow-2xl bg-primary">
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Interactive Placeholder Overlay -->
+<div class="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="relative py-section-gap-desktop overflow-hidden">
+<div class="absolute inset-0 z-0 flex">
+<div class="w-1/2 h-full relative">
+<img class="w-full h-full object-cover" data-alt="A panoramic wide shot of the Luxembourg City skyline during a vibrant sunset, showcasing its perfect blend of historical architecture and modern business districts. The city feels peaceful and exceptionally clean, bathed in golden light that emphasizes the high quality of life and safety. This sophisticated urban landscape represents the safe and prestigious environment offered to university students." src="https://lh3.googleusercontent.com/aida/AP1WRLsz3LRAne51Jz_IEPKKewGQH_vfWeYK644kFkXLGn7yMeVIWhhm3PV09109Z-z8prDqWXLPpCLdkw_0aYKAyKOFfeW9B9NxMpAcrY1cOVuk5h2rhnVqp2w4OGrfZYzyewKusQanGiP1Z3VCFlntsZCSnGY7JXmc07ovuXcHnajeIy8XWcR19L4Z88CVmHN37228Wxh-qFf7QZTnnUTA2Squ4rcYdVS6zCiSTFs6Fm3BIyB5GiVnrvjfmD7t"/>
+</div>
+<div class="w-1/2 h-full relative">
+<img class="w-full h-full object-cover" data-alt="A professional setting showing a modern co-working space in Luxembourg, where young professionals and students are engaged in high-level discussions. The background features sleek glass walls and minimalist furniture, reflecting the global financial hub atmosphere. The scene captures the transition from academic excellence to elite career opportunities in a high-contrast editorial style." src="https://lh3.googleusercontent.com/aida/AP1WRLuwg1L9v-5obDvWU5JNhLbZqkLNOBSNINz6YHvYGC3uabiiebozcneKQ5-ro9P-um6Nnwr9p5AH5YF6E8Hss0XZtTBtGc6vw4hD-fLqC5qBj2DxUK5f_4Qwm8g5QcY-iK-FkWgHSmBB1TQg6XBm9XSIjJIexiLnTcnEInxR2Y_LzhQqKMJbG232MhqBl-Tj8VIv6Uo4rRjc-UM-I8m-gihLOGW2XKieF2xNXnorqpQkQwRCCQfhD8TX3aC_"/>
+</div>
+<div class="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-container-max-width mx-auto px-gutter">
+<div class="glass-panel p-12 md:p-20 rounded-3xl text-center md:text-left max-w-4xl mx-auto md:mx-0">
+<h2 class="font-headline-lg text-display-lg text-primary mb-6">Prêt à transformer l'avenir de votre enfant ?</h2>
+<p class="text-on-surface-variant text-body-lg mb-10">Inscrivez-vous pour une consultation gratuite et personnalisée afin de découvrir toutes nos opportunités académiques.</p>
+<form class="flex flex-col md:flex-row gap-4 mb-8">
+<input class="flex-grow bg-white border-outline/20 rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary outline-none text-on-surface" placeholder="Votre adresse email" type="email"/>
+<button class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-primary-container transition-all whitespace-nowrap" type="submit">S'Inscrire</button>
+</form>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-primary/10">
+<div>
+<p class="font-label-md text-primary mb-1 uppercase tracking-widest">Téléphone</p>
+<p class="font-body-md font-bold">+352 XX XX XX XX</p>
+</div>
+<div>
+<p class="font-label-md text-primary mb-1 uppercase tracking-widest">Email</p>
+<p class="font-body-md font-bold">contact@unilux.lu</p>
+</div>
+<div>
+<p class="font-label-md text-primary mb-1 uppercase tracking-widest">Adresse</p>
+<p class="font-body-md font-bold">Luxembourg City</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-low">
+<div class="w-full py-section-gap-desktop px-gutter flex flex-col md:flex-row justify-between items-start gap-8 max-w-container-max-width mx-auto">
+<div class="max-w-sm">
+<span class="font-display-lg text-headline-md text-primary">University of Luxembourg</span>
+<p class="mt-4 text-on-surface-variant">Une institution d'excellence au cœur de l'Europe, dédiée à la recherche et à l'enseignement de rang mondial.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-label-md text-primary mb-4 uppercase">À propos</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Notre mission</a></li>
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Gouvernance</a></li>
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Accréditations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-4 uppercase">Services</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Admissions</a></li>
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Programmes</a></li>
+<li><a class="text-on-surface-variant hover:text-on-primary-fixed-variant underline transition-all" href="#">Vie étudiante</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-label-md text-primary mb-4 uppercase">Contact</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li>Privacy Policy</li>
+<li>Terms of Service</li>
+<li>Accessibility</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-gutter py-8 border-t border-outline/10 text-center md:text-left text-on-surface-variant text-sm">
+            © 2024 University of Luxembourg. All rights reserved.
+        </div>
+</footer>
+<script>
+        // Simple intersection observer for reveal effects
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
